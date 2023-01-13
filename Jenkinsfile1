@@ -1,9 +1,9 @@
 pipeline {
-  agent {
-   node ("Serv1") {
+  agent {label "Serv1"} {
+   
     docker { image 'node:16-alpine' }
     }
-  }
+  
   stages {
     stage('Test') {
       steps {
