@@ -1,5 +1,5 @@
 pipeline {
-  agent {
+  agent any {
   agent {"Serv1" || "developer"}
     docker { image 'node:16-alpine' }
   }
